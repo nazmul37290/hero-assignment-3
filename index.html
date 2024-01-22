@@ -41,6 +41,7 @@
             colors: {
               "main-color": "#FF4240",
               "description-color": "rgba(19, 19, 24, 0.60);",
+              "section-color": "#131318",
             },
           },
         },
@@ -87,7 +88,8 @@
                 <li><a>Contact</a></li>
               </ul>
             </div>
-            <a class="btn btn-ghost gap-0 text-2xl lg:text-4xl font-extrabold"
+            <a
+              class="btn btn-ghost gap-0 text-section-color text-2xl lg:text-4xl font-extrabold"
               >Hockey<span class="text-main-color">'</span>s</a
             >
           </div>
@@ -166,7 +168,96 @@
         </div>
       </section>
     </header>
-    <main></main>
+    <main class="container mx-auto">
+      <!-- professional clubs section starts here -->
+
+      <section class="my-32">
+        <div class="space-y-6">
+          <h3 class="text-section-color text-4xl font-extrabold text-center">
+            Professional Hockeys Club
+          </h3>
+          <p class="font-medium text-center text-description-color">
+            Welcome to our Club , we are a premier professional field hockey
+            club that epitomizes excellence on the field.
+          </p>
+        </div>
+        <!-- progress bar container -->
+        <div
+          class="flex flex-col lg:flex-row items-center space-y-6 lg:space-y-0 lg:items-start justify-evenly mt-12"
+        >
+          <!-- progress bar 1 -->
+          <div class="w-64 text-center space-y-5">
+            <div
+              class="radial-progress text-[#49D293]"
+              style="--value: 87; --size: 8rem"
+              role="progressbar"
+            >
+              87%
+            </div>
+            <h4 class="text-section-color text-xl font-semibold">
+              Prayer Facility
+            </h4>
+            <p class="text-description-color">
+              Step into our spacious prayer halls adorned with soft lighting and
+              intricate designs.
+            </p>
+          </div>
+
+          <!-- progress bar 2 -->
+          <div class="w-64 text-center space-y-5">
+            <div
+              class="radial-progress text-main-color"
+              style="--value: 95; --size: 8rem"
+              role="progressbar"
+            >
+              95%
+            </div>
+            <h4 class="text-section-color text-xl font-semibold">
+              Experienced Coach
+            </h4>
+            <p class="text-description-color">
+              coaching methodology goes beyond immediate results, focusing on
+              the long-term growth and potential of each athlete
+            </p>
+          </div>
+
+          <!-- progress bar 3 -->
+          <div class="w-64 text-center space-y-5">
+            <div
+              class="radial-progress text-[#FFB546]"
+              style="--value: 90; --size: 8rem"
+              role="progressbar"
+            >
+              90%
+            </div>
+            <h4 class="text-section-color text-xl font-semibold">
+              Senior Player
+            </h4>
+            <p class="text-description-color">
+              Our facility offers specialized guidance and support programs,
+            </p>
+          </div>
+
+          <!-- progress bar 4 -->
+          <div class="w-64 text-center space-y-5">
+            <div
+              class="radial-progress text-[#4C8DF1]"
+              style="--value: 80; --size: 8rem"
+              role="progressbar"
+            >
+              80%
+            </div>
+            <h4 class="text-section-color text-xl font-semibold">
+              Training Ground
+            </h4>
+            <p class="text-description-color">
+              world-class facility designed to cultivate excellence, nurture
+              talent, and propel athletes toward success.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer></footer>
   </body>
 </html>
