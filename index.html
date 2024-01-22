@@ -39,12 +39,134 @@
         theme: {
           extend: {
             colors: {
-              clifford: "#da373d",
+              "main-color": "#FF4240",
+              "description-color": "rgba(19, 19, 24, 0.60);",
             },
           },
         },
       };
     </script>
   </head>
-  <body class=".font-manrope"></body>
+  <body class="font-manrope">
+    <header class="container mx-auto">
+      <!-- navbar section starts here -->
+      <nav class="my-3 lg:my-12">
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div
+                tabindex="0"
+                role="button"
+                class="btn btn-ghost p-0 lg:hidden"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              >
+                <li><a class="text-main-color">Home</a></li>
+
+                <li><a>About</a></li>
+                <li><a>Pages</a></li>
+
+                <li><a>Blog</a></li>
+                <li><a>Contact</a></li>
+              </ul>
+            </div>
+            <a class="btn btn-ghost gap-0 text-2xl lg:text-4xl font-extrabold"
+              >Hockey<span class="text-main-color">'</span>s</a
+            >
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 text-lg gap-3 text-gray-500">
+              <li><a class="text-main-color">Home</a></li>
+
+              <li><a>About</a></li>
+              <li><a>Pages</a></li>
+
+              <li><a>Blog</a></li>
+              <li><a>Contact</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <a href=""
+              ><i
+                class="fa-solid fa-magnifying-glass hidden lg:flex mr-6 text-2xl text-gray-500"
+              ></i
+            ></a>
+
+            <a
+              class="btn bg-main-color text-white text-xl px-4 lg:px-6 py-2 lg:py-4 h-auto text-center font-bold"
+              >Get Ticket</a
+            >
+          </div>
+        </div>
+      </nav>
+
+      <!-- banner section starts here -->
+
+      <section class="relative">
+        <div class="carousel h-52 lg:h-[550px] w-full">
+          <div id="slide1" class="carousel-item relative w-full">
+            <img src="Images/1.png" class="w-full" />
+
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide3" class="btn btn-circle">❮</a>
+              <a href="#slide2" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide2" class="carousel-item relative w-full">
+            <img src="Images/2.png" class="w-full" />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide1" class="btn btn-circle">❮</a>
+              <a href="#slide3" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide3" class="carousel-item relative w-full">
+            <img src="Images/3.png" class="w-full" />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide2" class="btn btn-circle">❮</a>
+              <a href="#slide1" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- slider top card -->
+
+        <div
+          class="bg-[#131318] space-y-2 lg:space-y-4 lg:absolute bottom-8 right-8 p-4 lg:p-8 rounded-2xl lg:w-[502px]"
+        >
+          <h4 class="text-lg lg:text-2xl font-extrabold text-white">
+            Meet all the heroes from the field
+          </h4>
+          <p class="font-medium text-white">
+            Hockey fields are where heroes are not born, but made through
+            determination and hard work
+          </p>
+        </div>
+      </section>
+    </header>
+    <main></main>
+    <footer></footer>
+  </body>
 </html>
